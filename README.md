@@ -80,7 +80,7 @@ ceph health detail > /tmp/laststatus.txt
  в открывшемся редакторе вставляем:
 
 
- * * * * * /usr/bin/local/send.sh
+		* * * * * /usr/bin/local/send.sh
 
 
 сохраняем.
