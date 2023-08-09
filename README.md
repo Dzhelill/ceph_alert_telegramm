@@ -56,6 +56,8 @@ fi
 ceph health detail > /tmp/laststatus.txt
 
 
+ 
+ 
  укажите "токен_бота"
 
 
