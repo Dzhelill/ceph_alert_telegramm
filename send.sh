@@ -1,3 +1,4 @@
+#!/bin/bash
 STATUS=$(ceph health detail)
 LASTSTATUS=$(cat /tmp/laststatus.txt)
 
