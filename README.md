@@ -32,28 +32,28 @@
  вставляем туда текст: 
 
 
-STATUS=$(ceph health detail)
+		STATUS=$(ceph health detail)
 
 
-LASTSTATUS=$(cat /tmp/laststatus.txt)
+		LASTSTATUS=$(cat /tmp/laststatus.txt)
 
 
-if [ "$(ceph health detail)" != "$LASTSTATUS" ]
+		if [ "$(ceph health detail)" != "$LASTSTATUS" ]
 
 
-	then
+			then
 
 
-                curl -s -X POST https://api.telegram.org/"токен_бота"/sendMessage -d chat_id="id_чата" -d text="имя_CEPH 
+				url -s -X POST https://api.telegram.org/"токен_бота"/sendMessage -d chat_id="id_чата" -d text="имя_CEPH 
 
 
-$STATUS"
+		$STATUS"
 
 
-fi
+		fi
 
 
-ceph health detail > /tmp/laststatus.txt
+		ceph health detail > /tmp/laststatus.txt
 
 
  
